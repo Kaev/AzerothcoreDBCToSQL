@@ -1,0 +1,45 @@
+DROP TABLE IF EXISTS `ChatChannels`; 
+CREATE TABLE `ChatChannels` ( `ID` INT NOT NULL DEFAULT '0',
+ `Flags` INT NOT NULL DEFAULT '0',
+ `FactionGroup` INT NOT NULL DEFAULT '0',
+ `Name_Lang_enUS` TEXT NULL,
+ `Name_Lang_enGB` TEXT NULL,
+ `Name_Lang_koKR` TEXT NULL,
+ `Name_Lang_frFR` TEXT NULL,
+ `Name_Lang_deDE` TEXT NULL,
+ `Name_Lang_enCN` TEXT NULL,
+ `Name_Lang_zhCN` TEXT NULL,
+ `Name_Lang_enTW` TEXT NULL,
+ `Name_Lang_zhTW` TEXT NULL,
+ `Name_Lang_esES` TEXT NULL,
+ `Name_Lang_esMX` TEXT NULL,
+ `Name_Lang_ruRU` TEXT NULL,
+ `Name_Lang_ptPT` TEXT NULL,
+ `Name_Lang_ptBR` TEXT NULL,
+ `Name_Lang_itIT` TEXT NULL,
+ `Name_Lang_Unk` TEXT NULL,
+ `Name_Lang_Mask` INT UNSIGNED NOT NULL DEFAULT '0',
+ `Shortcut_Lang_enUS` TEXT NULL,
+ `Shortcut_Lang_enGB` TEXT NULL,
+ `Shortcut_Lang_koKR` TEXT NULL,
+ `Shortcut_Lang_frFR` TEXT NULL,
+ `Shortcut_Lang_deDE` TEXT NULL,
+ `Shortcut_Lang_enCN` TEXT NULL,
+ `Shortcut_Lang_zhCN` TEXT NULL,
+ `Shortcut_Lang_enTW` TEXT NULL,
+ `Shortcut_Lang_zhTW` TEXT NULL,
+ `Shortcut_Lang_esES` TEXT NULL,
+ `Shortcut_Lang_esMX` TEXT NULL,
+ `Shortcut_Lang_ruRU` TEXT NULL,
+ `Shortcut_Lang_ptPT` TEXT NULL,
+ `Shortcut_Lang_ptBR` TEXT NULL,
+ `Shortcut_Lang_itIT` TEXT NULL,
+ `Shortcut_Lang_Unk` TEXT NULL,
+ `Shortcut_Lang_Mask` INT UNSIGNED NOT NULL DEFAULT '0',
+ PRIMARY KEY (`ID`)) ENGINE=MyISAM DEFAULT CHARSET=utf8; 
+INSERT INTO `ChatChannels` VALUES (1,524291,0,"General - %s","","","","","","","","","","","","","","","",16712190,"General","","","","","","","","","","","","","","","",16712190); 
+INSERT INTO `ChatChannels` VALUES (2,59,0,"Trade - %s","","","","","","","","","","","","","","","",16712190,"Trade","","","","","","","","","","","","","","","",16712190); 
+INSERT INTO `ChatChannels` VALUES (22,65539,0,"LocalDefense - %s","","","","","","","","","","","","","","","",16712190,"LocalDefense","","","","","","","","","","","","","","","",16712190); 
+INSERT INTO `ChatChannels` VALUES (23,65540,0,"WorldDefense","","","","","","","","","","","","","","","",16712190,"WorldDefense","","","","","","","","","","","","","","","",16712190); 
+INSERT INTO `ChatChannels` VALUES (25,131122,0,"GuildRecruitment - %s","","","","","","","","","","","","","","","",16712190,"GuildRecruitment","","","","","","","","","","","","","","","",16712190); 
+INSERT INTO `ChatChannels` VALUES (26,262201,0,"LookingForGroup","","","","","","","","","","","","","","","",16712190,"LookingForGroup","","","","","","","","","","","","","","","",16712190); 

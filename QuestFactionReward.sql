@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS `QuestFactionReward`; 
+CREATE TABLE `QuestFactionReward` ( `ID` INT NOT NULL DEFAULT '0',
+ `Difficulty_1` INT NOT NULL DEFAULT '0',
+ `Difficulty_2` INT NOT NULL DEFAULT '0',
+ `Difficulty_3` INT NOT NULL DEFAULT '0',
+ `Difficulty_4` INT NOT NULL DEFAULT '0',
+ `Difficulty_5` INT NOT NULL DEFAULT '0',
+ `Difficulty_6` INT NOT NULL DEFAULT '0',
+ `Difficulty_7` INT NOT NULL DEFAULT '0',
+ `Difficulty_8` INT NOT NULL DEFAULT '0',
+ `Difficulty_9` INT NOT NULL DEFAULT '0',
+ `Difficulty_10` INT NOT NULL DEFAULT '0',
+ PRIMARY KEY (`ID`)) ENGINE=MyISAM DEFAULT CHARSET=utf8; 
+INSERT INTO `QuestFactionReward` VALUES (1,0,10,25,75,150,250,350,500,1000,5); 
+INSERT INTO `QuestFactionReward` VALUES (2,0,-10,-25,-75,-150,-250,-350,-500,-1000,-5); 
